@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content="game,matching">
+    <!--for font and structure-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <title>Matching Game</title>
+    <link rel="icon" href="img/icon.png">
+
+     <!--css,jq-->
+    <link rel="stylesheet" href="css/css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write (<script src="js/jquery-3.3.1.min.js"></script>)</script>
+    </head>
+
+    <body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+            <h4>memory game</h4>
+       </header>                
+    <!-- for rate-->
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i id="1-star" class="fa fa-star"></i></li>
+                <li><i id="2-star" class="fa fa-star"></i></li>
+                <li><i id="3-star" class="fa fa-star"></i></li>
+            </ul>
+              
+              <!-- as counter for number of moves-->
+            <span class="moves">0</span> Moves 
+            <span class="timer">0</span>  Time
+            <div class="restart">
+            <i class="fa fa-repeat"></i>
+            </div>
+           </section>
+
+
+            <!--thhhhiiisss is card    -->
+    <ul class="deck"></ul>
+        
+    </div> 
+    
+<div class="modal fade" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="winnerModal-label">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="winnerModal-label">Congratulations YOU WIN</h4>
+</div>
+<div class="modal-body">
+<p id="winnerText"></p>
+</div>
+<!--for button in box-->
+<div class="modal-footer">
+<button type="button" onclick="init(), $rating.removeClass('fa-star-o').addClass('fa-star'); " class="btn btn-default" data-dismiss="modal">play again</button>
+<button type="button" onclick="init(), $rating.removeClass('fa-star-o').addClass('fa-star'); " class="btn btn-default" data-dismiss="modal">Enough</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+ <footer>
+           <p>CopyRight MSM-2018</p>
+        </footer>
+   <!--jq-->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    
+</body>
+
+</html>
